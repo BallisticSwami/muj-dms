@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <!-- Required stylesheets -->
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Archivo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+        
+        <title>MUJ DMS</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="navig">
+                <img src="resources/img/muj_logo_white.png" alt="MUJ Logo" class="logo">
+                <h1 class="logo-text">
+                    Manipal<br>University<br>Jaipur
+                    </h1>
+                
+                <ul class="main-nav">
+                    <li>
+                    <a href="https://jaipur.manipal.edu/muj/academics/students-corner.html">Notice</a>
+                    <a href="https://jaipur.manipal.edu/muj/academics.html">Our Info</a>
+                    <a href="https://jaipur.manipal.edu/muj/contact-us.html">Contact Us</a>
+                    <a href="mailto:admissions@jaipur.manipal.edu">Need Help?</a>
+                    </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="main-text-box">
+            <h1>Check academic records.<br>All in one place.</h1>
+            <a class="btn-main" href="https://jaipur.manipal.edu">Visit MUJ</a>
+            </div>
+                <!--- Form --->
+        <div class="loginbox">
+                <img src="resources/img/user.png" class="avatar" alt="Avatar">
+            <h1>Login</h1>
+            <form id="login-form">
+                <p>Registration Number</p>
+                <input type="text" name="" placeholder="Enter Reg. No." class="input-login" id="username" required
+                >
+                <p>Password</p>
+                <input type="password" name="" placeholder="Enter Password" class="input-login" id="password" required>
+                <input type="submit" name="" value="Login"><br>
+                
+            </form>
+                </div>
+        </header>
+        
+
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBcDRe0SQ1LupfbltvV3IBZjvADvJ1w9nY",
+    authDomain: "muj-dms.firebaseapp.com",
+    databaseURL: "https://muj-dms.firebaseio.com",
+    projectId: "muj-dms",
+    appId: "1:706537929654:web:37ac041b81ded23af05f17",
+    measurementId: "G-8VYKYM5RR5"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+    //make auth and fiestore refs
+    const auth = firebase.auth();
+    const db = firebase.database();
+    
+</script>
+<script src="resources/js/auth.js"></script>
+    </body>
+</html>
